@@ -1,0 +1,157 @@
+.container {
+    padding: 4em 5em;
+}
+
+/* header {
+    background: url(/src/assets/png/Purple-Lens-Flare-PNG.png), lightgray -204.25px 7px / 119.817% 104.852% no-repeat;
+    background-blend-mode: hard-light;
+} */
+
+section {
+    background-color: #150e28;
+    padding-bottom: 4em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ul {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+header span, article h2 {
+    color: #D434FE;
+    font-family: Clash Display;
+    font-style: normal;
+    line-height: normal;
+}
+
+header span {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+header h1 {
+    color: #FFF;
+    font-family: Clash Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+li {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ul .contact {
+    background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.button-register button, form button {
+    width: 172px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #FFF;
+    border: 0;
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    cursor: pointer;
+}
+
+/*Style on CTA */
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 10rem;
+}
+
+.question-form {
+    width: 617px;
+    padding: 6em 8em;
+    height: 611px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+.question-form_assist {
+    color: #D434FE;
+    font-family: Clash Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.response-input, .cta-button {
+    padding-top: 3rem;
+}
+
+.response-input input, textarea {
+    width: 100%;
+    outline: 0;
+    color: white;
+    padding: 1.09em;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cta-button {
+    text-align: center;
+}
+
+main article h2 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.contact-cta {
+    font-size: 16px;
+    color: #FFF;
+    line-height: 1.5em;
+}
+
+.contact-cta_media, .contact-cta {
+    padding-top: 1.8em;
+}
+
+.contact-cta_media p {
+    color: #D434FE;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+figure {
+    padding-top: 1.0em;
+    display: flex;
+    gap: 1.4em;
+}
