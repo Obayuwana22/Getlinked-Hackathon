@@ -14,11 +14,13 @@ section {
 
 header {
   display: flex;
+  background-color: #150e28;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
   bottom: 0;
+  z-index: 3;
 }
 
 ul {
@@ -36,7 +38,7 @@ ul {
 header span,
 article h2 {
   color: #d434fe;
-  font-family: Clash Display;
+  font-family: "Clash Display";
   font-style: normal;
   line-height: normal;
 }
@@ -48,7 +50,7 @@ header span {
 
 header h1 {
   color: #fff;
-  font-family: Clash Display;
+  font-family: "Clash Display";
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -57,7 +59,7 @@ header h1 {
 
 li {
   color: #fff;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -110,7 +112,16 @@ main {
 
 .question-form_assist {
   color: #d434fe;
-  font-family: Clash Display;
+  font-family: "Clash Display";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.question-form_assist h3 {
+  color: #d434fe;
+  font-family: "Clash Display";
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -126,12 +137,17 @@ main {
 textarea {
   width: 100%;
   outline: 0;
-  color: white;
   padding: 1.09em;
   border-radius: 4px;
   border: 1px solid #fff;
   background: rgba(255, 255, 255, 0.03);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .cta-button {
@@ -149,6 +165,15 @@ main article h2 {
   line-height: 1.5em;
 }
 
+.contact-cta p {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .contact-cta_media,
 .contact-cta {
   padding-top: 1.8em;
@@ -156,7 +181,7 @@ main article h2 {
 
 .contact-cta_media p {
   color: #d434fe;
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -167,4 +192,23 @@ figure {
   padding-top: 1em;
   display: flex;
   gap: 1.4em;
+}
+
+.response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.success {
+  background: #34fe34;
+  background: #fe34b9;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
 }

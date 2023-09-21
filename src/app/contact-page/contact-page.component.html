@@ -52,28 +52,46 @@
       </div>
     </article>
     <div class="question-form">
-      <form action="">
-        <div class="question-form_assist">
-          <h3>Questions or need assistance?</h3>
-          <h3>Let us know about it!</h3>
+      <div class="question-form_assist">
+        <h3>Questions or need assistance?</h3>
+        <h3>Let us know about it!</h3>
+      </div>
+      <form [formGroup]="contactForm" (submit)="onSubmit()">
+        <div class="response-input">
+          <input
+            type="text"
+            name="name"
+            placeholder="First Name"
+            formControlName="first_name"
+          />
         </div>
         <div class="response-input">
-          <input type="text" name="name" placeholder="First Name" />
-        </div>
-        <div class="response-input">
-          <input type="email" name="email" placeholder="Mail" />
+          <input
+            type="email"
+            name="email"
+            placeholder="Mail"
+            formControlName="email"
+          />
         </div>
         <div class="response-input">
           <textarea
             name="message"
             id="message"
             cols="30"
-            rows="10"
+            rows="5"
             placeholder="Message"
+            formControlName="message"
           ></textarea>
         </div>
         <div class="cta-button">
-          <button>Submit</button>
+          <button type="submit">Submit</button>
+        </div>
+
+        <div class="response">
+          <div class="error"></div>
+          <div class="success" *ngIf="submittedSuccessful">
+            Form submitted successfully
+          </div>
         </div>
       </form>
     </div>
