@@ -432,9 +432,16 @@ main {
 }
 
 .timeline {
-  margin: 0 5em 3em;
+  margin: 0 5em 5em;
   background: #150e28;
   border-bottom: none;
+  position: relative;
+}
+
+.timeline-image1 {
+  position: absolute;
+  top: 17%;
+  left: 15%;
 }
 
 .timeline-text > p {
@@ -443,6 +450,7 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 172.4%; /* 24.136px */
+  margin-bottom: 3em;
 }
 
 .timeline-text-block {
@@ -487,6 +495,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .timeline-left span {
@@ -502,13 +511,61 @@ main {
   line-height: 170.9%; /* 20.508px */
 }
 
+.timeline-left-image2 {
+  position: absolute;
+  left: 80%;
+  bottom: 0;
+}
+
+.timeline-left-image3 {
+  position: absolute;
+  left: -20%;
+  bottom: -30%;
+}
+
 .prizes {
   padding-bottom: 8em;
   border-bottom: none;
+  margin-top: 10em;
+}
+
+.prizes-text {
+  position: relative;
+}
+
+.prizes-text-image1 {
+  position: absolute;
+  top: -30%;
+  left: 20%;
+}
+
+.prizes-text-image2 {
+  position: absolute;
+  top: 25%;
+  left: 65%;
 }
 
 .prizes-image {
   margin: 5em 0 4em;
+  position: relative;
+}
+
+.prizes-image1 {
+  position: absolute;
+  bottom: 0%;
+  left: 15%;
+}
+
+.prizes-image2 {
+  position: absolute;
+  bottom: -20%;
+  right: 15%;
+}
+
+.prizes-image3 {
+  position: absolute;
+  bottom: -110%;
+  right: 35%;
 }
 
 .prizes-lineup {
@@ -573,10 +630,30 @@ main {
   background: rgba(255, 255, 255, 0.01);
   padding: 4em;
   margin: 5em 3em 0;
+  position: relative;
+}
+
+.partners-image-item {
+  position: absolute;
+}
+
+.partners-image1 {
+  top: 0;
+  left: 7%;
+}
+
+.partners-image2 {
+  top: 37%;
+  left: 55%;
+}
+
+.partners-image3 {
+  bottom: 2%;
+  right: 13%;
 }
 
 .privacy {
-  margin: 0 5em;
+  margin: 2em 5em;
   padding-bottom: 10em;
   border-bottom: none;
 }
@@ -586,10 +663,17 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 216.4%; /* 25.968px */
+  position: relative;
+}
+
+.privacy-paragraph-image1 {
+  position: absolute;
+  right: 18%;
+  top: -1%;
 }
 
 .privacy-text p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .privacy-summary {
@@ -604,10 +688,16 @@ main {
   margin: 0 15px;
 }
 
+.privacy-paragraph-image2 {
+  position: absolute;
+  top: 19%;
+  right: 10%;
+}
+
 .license-block {
   text-align: left;
-  margin-left: 1.5em;
   margin-top: 2em;
+  padding: 0 1em;
 }
 .license {
   display: flex;
@@ -615,14 +705,22 @@ main {
   gap: 1em;
   margin-bottom: 2em;
   margin-top: 2em;
+  position: relative;
 }
 
 .license img {
   margin-top: 0.5em;
 }
 
+.license-image {
+  position: absolute;
+  left: -15%;
+  bottom: 80%;
+}
+
 .privacy-image {
   margin-top: 5em;
+  position: relative;
 }
 
 .privacy-image1 {
@@ -632,6 +730,29 @@ main {
 .privacy-image2 {
   margin-top: 10em;
   margin-left: -2em;
+}
+
+.privacy-image3 {
+  position: absolute;
+  top: 15%;
+  left: -5%;
+}
+
+.privacy-image4 {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+.privacy-image5 {
+  position: absolute;
+  top: 85%;
+}
+
+.privacy-image6 {
+  position: absolute;
+  bottom: 15%;
+  left: 13%;
 }
 
 /* Footer */
@@ -647,7 +768,17 @@ footer {
   line-height: 172.4%; /* 20.688px */
 }
 .footer-block {
-  padding-left: 6em;
+  padding-left: 5em;
+}
+
+.footer-header {
+  position: relative;
+}
+
+.footer-image {
+  position: absolute;
+  left: -10%;
+  bottom: 50%;
 }
 
 .footer-paragraph {
@@ -662,6 +793,13 @@ footer {
 
 .links {
   margin-bottom: 3em;
+  position: relative;
+}
+
+.links-image {
+  position: absolute;
+  left: 45%;
+  bottom: 45%;
 }
 
 .footer-cta {
@@ -690,6 +828,10 @@ footer {
   gap: 20px;
 }
 
+.contact {
+  position: relative;
+}
+
 .contact-item {
   margin-bottom: 2em;
   display: flex;
@@ -697,14 +839,27 @@ footer {
   gap: 20px;
 }
 
+.contact-star-image {
+  position: absolute;
+  left: 80%;
+  bottom: 60%;
+}
+
 .contact-item2 {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  position: relative;
 }
 
-.contact-item3 {
+.contact-paragraph {
   width: 7em;
+}
+
+.contact-item2-image {
+  position: absolute;
+  left: 20%;
+  bottom: -30%;
 }
 
 .copyright {
