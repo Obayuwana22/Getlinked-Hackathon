@@ -270,7 +270,7 @@ nav li:hover {
   }
 
   .hero-image1 {
-    width: 50%;
+    width: 40%;
     position: absolute;
     top: 10%;
     left: 47%;
@@ -279,8 +279,8 @@ nav li:hover {
   .hero-image img + img {
     position: absolute;
     right: 0;
-    width: 828px;
-    height: 715px;
+    width: auto;
+    height: 480px;
   }
 }
 
@@ -1008,8 +1008,14 @@ footer {
 @media screen and (min-width: 880px) {
   header {
     width: 100%;
-    overflow: hidden;
+    height: 100vh;
   }
+
+  .heading-title img {
+    width: 50%;
+    height: auto;
+  }
+
   .nav-bar-logo {
     margin-left: 7em;
   }

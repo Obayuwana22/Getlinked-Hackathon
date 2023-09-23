@@ -10,13 +10,14 @@
 }
 
 .register-img {
-  width: 42.45%;
+  width: 50%;
   margin-left: -8.5%;
+  height: 100%;
 }
 
 .register-img img {
-  width: auto;
-  height: 73vh;
+  width: 100%;
+  height: 100%;
 }
 
 .register-form {
@@ -213,7 +214,7 @@ select option {
 
 .register-success {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   padding: 130px 0;
   justify-content: center;

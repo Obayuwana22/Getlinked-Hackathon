@@ -139,4 +139,8 @@ export class RegisterComponent implements OnInit {
       document.body.classList.remove('unscrollable');
     }
   }
+
+  closePopUp() {
+    this.showPopUp = false;
+  }
 }
