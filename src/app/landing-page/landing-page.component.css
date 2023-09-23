@@ -643,8 +643,13 @@ main {
   left: 65%;
 }
 
+.prizes-left {
+  display: flex;
+  flex-direction: column;
+}
+
 .prizes-image {
-  margin: 5em 0 4em;
+  margin: 5em 0 5em;
   position: relative;
 }
 
@@ -990,6 +995,7 @@ footer {
 @media screen and (min-width: 880px) {
   header {
     width: 1512px;
+    overflow: hidden;
   }
   .nav-bar-logo {
     margin-left: 7em;
@@ -1097,14 +1103,32 @@ footer {
 
   .prizes {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .prizes-text {
+    margin: 0;
+    padding: 0;
+  }
+
+  .prizes-left {
+    display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 5em;
   }
 
   .prizes-image {
+    margin: 0;
+  }
+
+  /* .prizes-image {
     position: absolute;
     left: 0;
-  }
+  } */
 
   .privacy {
     display: flex;
