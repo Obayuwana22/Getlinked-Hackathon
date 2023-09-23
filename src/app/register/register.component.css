@@ -1,86 +1,274 @@
-.container {
-    padding: 4em 5em;
+@import url(./../contact-page/contact-page.component.css);
+
+.register-section {
+  position: relative;
 }
 
-/* header {
-    background: url(/src/assets/png/Purple-Lens-Flare-PNG.png), lightgray -204.25px 7px / 119.817% 104.852% no-repeat;
-    background-blend-mode: hard-light;
-} */
-
-section {
-    background-color: #150e28;
-    /* padding-bottom: 4em; */
+.register-img {
+  width: 42.45%;
+  margin-left: -8.5%;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* position: sticky;
-    top: 0;
-    bottom: 0; */
+.register-img img {
+  width: auto;
+  height: 73vh;
 }
 
-ul {
-    display: flex;
-    gap: 5rem;
-    list-style: none;
+.register-form {
+  width: 60.94%;
+  height: 740px;
+  padding: 6em 4em;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.menu-bar {
-    display: flex;
-    align-items: center;
-    gap: 10rem;
+.form-title h3 {
+  color: #d434fe;
+  font-family: "Clash Display";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 46px;
 }
 
-header span, article h2 {
-    color: #D434FE;
-    font-family: Clash Displ;
-    font-style: normal;
-    line-height: normal;
+.form-title h4 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  margin-bottom: 33px;
 }
 
-header span {
-    font-weight: 700;
-    font-size: 36px;
+.movement-cta {
+  display: flex;
+  align-items: baseline;
+  gap: 7px;
 }
 
-header h1 {
-    color: #FFF;
-    font-family: Clash Display;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+.line {
+  position: relative;
+  height: fit-content;
+  width: 101px;
+  display: flex;
+  justify-content: center;
 }
 
-li {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.hr-line {
+  position: absolute;
+  bottom: 0;
 }
 
-ul .contact {
-    background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-} 
-
-.button-register button {
-    width: 172px;
-    height: 53px;
-    border-radius: 4px;
-    font-size: 16px;
-    color: #FFF;
-    background: #150E28;
-    border: 2px solid;
-    cursor: pointer;
-    border-image: linear-gradient(#903AFF, #FF26B9) 22;
+.movement-cta p {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
+.main {
+  justify-content: space-between;
+}
 
-/* linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%) */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 29px;
+}
+
+.last-child {
+  margin-bottom: 23px;
+}
+
+.response-input {
+  width: 48%;
+  padding: 0;
+}
+
+.response-input label {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.response-input input {
+  width: 100%;
+  height: 47px;
+  font-size: 14px;
+  margin-top: 11px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.response-input input::placeholder {
+  color: rgba(255, 255, 255, 0.25);
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.response-input select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 47px;
+  margin-top: 11px;
+  font-size: 14px;
+  color: #fff;
+  padding: 1em;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-image: url("./../../assets/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 13px center;
+  cursor: pointer;
+}
+
+select option {
+  background-color: transparent;
+  height: 300px;
+  padding: 5px 10px;
+  color: #333;
+}
+
+.select-option {
+  padding: 20px;
+  display: inline-block;
+}
+
+.response-input select::-ms-expand {
+  display: none;
+}
+
+.review-details {
+  color: #ff26b9;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.check-terms label {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.check-terms label input {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid #fff;
+}
+
+.cta-button {
+  width: 100%;
+}
+
+.cta-button button {
+  width: 100%;
+}
+
+.register-success {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 130px 0;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(21, 14, 40, 0.93);
+  z-index: 3;
+}
+
+.pop-up {
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Montserrat";
+  color: #fff;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 1px solid #d434fe;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.pop-up img {
+  width: 350px;
+  height: auto;
+}
+
+.pop-up h4 {
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.pop-up p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0 170px;
+  line-height: normal;
+
+  margin: 0 auto;
+}
+
+.back-button {
+  padding: 0 41px 43px 32px;
+  border-radius: 4px;
+  margin-top: 38px;
+}
+
+.back-button button {
+  background: linear-gradient(
+    270deg,
+    #903aff 0%,
+    #d434fe 56.42%,
+    #ff26b9 99.99%,
+    #fe34b9 100%
+  );
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 53px;
+  width: 100%;
+  color: #fff;
+  border-radius: 4px;
+}

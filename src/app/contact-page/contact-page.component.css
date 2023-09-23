@@ -1,7 +1,3 @@
-.container {
-  padding: 4em 5em;
-}
-
 /* header {
     background: url(/src/assets/png/Purple-Lens-Flare-PNG.png), lightgray -204.25px 7px / 119.817% 104.852% no-repeat;
     background-blend-mode: hard-light;
@@ -9,77 +5,16 @@
 
 section {
   background-color: #150e28;
-  padding-bottom: 4em;
+  padding-right: 8.5%;
+  padding-left: 8.5%;
 }
 
-header {
-  display: flex;
-  background-color: #150e28;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  bottom: 0;
-  z-index: 3;
-}
-
-ul {
-  display: flex;
-  gap: 5rem;
-  list-style: none;
-}
-
-.menu-bar {
-  display: flex;
-  align-items: center;
-  gap: 10rem;
-}
-
-<<<<<<< HEAD
-header span, article h2 {
-    color: #D434FE;
-    font-family: Clash Displaygit ;
-    font-style: normal;
-    line-height: normal;
-=======
 header span,
 article h2 {
   color: #d434fe;
   font-family: "Clash Display";
   font-style: normal;
   line-height: normal;
->>>>>>> ad6b776f0aa42661d18409ff53787a1198b26e38
-}
-
-header span {
-  font-weight: 700;
-  font-size: 36px;
-}
-
-header h1 {
-  color: #fff;
-  font-family: "Clash Display";
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-li {
-  color: #fff;
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-ul .contact {
-  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
-  cursor: pointer;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .button-register button,
@@ -105,8 +40,9 @@ form button {
 main {
   display: flex;
   justify-content: space-around;
-  align-items: baseline;
-  margin-top: 10rem;
+  align-items: center;
+  width: 100%;
+  padding: 57px 0;
 }
 
 .question-form {
