@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
 
@@ -11,17 +11,31 @@ export class RegisterComponent implements OnInit {
   submittedSuccessful: boolean = true;
   showPopUp: boolean = false;
   categories: any;
-
+  formSubmitted: boolean = false;
+  loading: boolean = false;
   registerForm: FormGroup = new FormGroup({});
 
 
-
-
   groupSizes: { value: string, label: string }[] = [
-    { value: 'select', label: 'Select' },
-    { value: 'groupSize-2', label: 'Category 1' },
+    { value: '1', label: '1' },
+    { value: '2', label: '2' },
+    { value: '3', label: '3' },
+    { value: '4', label: '4' },
+    { value: '5', label: '5' },
+    { value: '10', label: '10' },
+    { value: '20', label: '20' },
+    { value: '50', label: '50' },
+    { value: 'custom', label: 'Custom' },
 
   ];
+
+  acceptTermsChecked: boolean = false;
+
+  onAcceptTermsChange() {
+    this.acceptTermsChecked = !this.acceptTermsChecked;
+    this.registerForm.get('acceptTerms')?.setValue(this.acceptTermsChecked);
+    console.log(this.registerForm.value);
+  }
 
 
 
@@ -41,7 +55,9 @@ export class RegisterComponent implements OnInit {
       pTopic: ['', Validators.required],
       category: ['', Validators.required],
       gSize: ['', Validators.required],
+      customGSize: [''],
       acceptTerms: [false, Validators.requiredTrue]
+
     });
 
   };
@@ -69,21 +85,48 @@ export class RegisterComponent implements OnInit {
     }
   }
 
-  // hideRegistrationSuccessPopup() {
-  //   this.submittedSuccessful = false;
-  //   const registerSection = document.querySelector('.register-section');
-  //   if (registerSection) {
-  //     registerSection.classList.remove('overflow-hidden');
-  //   }
-  // }
+
 
 
 
   onSubmit() {
-    if (this.registerForm.invalid) {
-      console.log("form is invalid")
-    } else {
+    this.formSubmitted = true;
+    this.loading = true;
+    console.log(this.registerForm.value);
+    const userData = {
+      email: this.registerForm.get('email')?.value,
+      phone_number: this.registerForm.get('pNumber')?.value,
+      team_name: this.registerForm.get('team_name')?.value,
+      group_size: this.registerForm.get('gSize')?.value === 'custom'
+        ? this.registerForm.get('customGSize')?.value
+        : this.registerForm.get('gSize')?.value,
+      project_topic: this.registerForm.get('pTopic')?.value,
+      category: this.registerForm.get('category')?.value,
+      privacy_policy_accepted: this.registerForm.get('acceptTerms')?.value
+    };
 
-    }
+    console.log(userData);
+
+
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    this.http.post('https://backend.getlinked.ai/hackathon/registration', userData, { headers })
+      .subscribe(
+        (response) => {
+          this.loading = false;
+          this.submittedSuccessful = true;
+          this.showPopUp = true;
+          console.log('Registration successful:', response);
+          this.registerForm.reset();
+
+        },
+        (error) => {
+          console.error('Registration failed:', error);
+          this.loading = false;
+        }
+      );
+
   }
 }

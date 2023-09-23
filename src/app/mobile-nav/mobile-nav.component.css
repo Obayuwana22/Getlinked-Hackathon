@@ -63,3 +63,57 @@ ul .contact {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 3em 6%;
+  }
+
+  header {
+    gap: 3rem;
+  }
+
+  ul {
+    gap: 3rem;
+  }
+
+  .menu-bar {
+    gap: 5rem;
+  }
+
+  header span,
+  article h2 {
+    font-size: 28px;
+  }
+}
+
+/* Media query for screens with a max-width of 768px (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2em 4%;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  header span,
+  article h2,
+  header h1 {
+    font-size: 24px;
+  }
+
+  li {
+    font-size: 14px;
+  }
+
+  ul .contact {
+    font-size: 16px;
+  }
+}
