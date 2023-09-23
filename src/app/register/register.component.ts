@@ -117,9 +117,10 @@ export class RegisterComponent implements OnInit {
         (response) => {
           this.loading = false;
           this.submittedSuccessful = true;
-          this.showPopUp = true;
+          this.togglePopUp();
           console.log('Registration successful:', response);
           this.registerForm.reset();
+
 
         },
         (error) => {
@@ -128,5 +129,14 @@ export class RegisterComponent implements OnInit {
         }
       );
 
+  }
+
+  togglePopUp() {
+    this.showPopUp = true;
+    if (this.showPopUp) {
+      document.body.classList.add('unscrollable');
+    } else {
+      document.body.classList.remove('unscrollable');
+    }
   }
 }

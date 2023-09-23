@@ -2,9 +2,9 @@
   <div class="nav-bar">
     <app-logo class="nav-bar-logo"></app-logo>
     <ul>
-      <li>Timeline</li>
-      <li>Overview</li>
-      <li>FAQS</li>
+      <li (click)="scrollToSection('timeline')">Timeline</li>
+      <li (click)="scrollToSection('introduction')">Overview</li>
+      <li (click)="scrollToSection('faqs')">FAQS</li>
       <li>Contact</li>
       <app-button class="nav-bar-btn"></app-button>
     </ul>
@@ -20,9 +20,9 @@
       <img src="./../../assets/svg/Group 1.svg" alt="" />
     </div>
     <ul>
-      <li>Timeline</li>
-      <li>Overview</li>
-      <li>FAQS</li>
+      <li (click)="scrollToSection('timeline')">Timeline</li>
+      <li (click)="scrollToSection('introduction')">Overview</li>
+      <li (click)="scrollToSection('faqs')">FAQS</li>
       <li>Contact</li>
     </ul>
     <app-button></app-button>
@@ -91,7 +91,7 @@
 </header>
 
 <main>
-  <section class="introduction main-content">
+  <section class="introduction main-content" id="introduction">
     <div class="introduction-image">
       <img
         class="introduction-image1"
@@ -205,7 +205,7 @@
     </div>
   </section>
 
-  <section class="FAQS main-content">
+  <section class="FAQS main-content" id="faqs">
     <div class="FAQS-text">
       <img src="./../../assets/svg/star pu (2).svg" alt="" />
       <h2 class="FAQS-heading main-subheading">
@@ -257,7 +257,7 @@
     </div>
   </section>
 
-  <section class="timeline main-content">
+  <section class="timeline main-content" id="timeline">
     <div class="timeline-text">
       <h2 class="timeline-heading main-subheading">Timeline</h2>
       <p>
