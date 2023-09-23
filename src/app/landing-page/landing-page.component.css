@@ -9,6 +9,53 @@ header {
   min-width: 396px;
 }
 
+nav {
+  display: none;
+  font-family: Inter;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 492px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(255, 255, 255, 0.04);
+  background: #150e28;
+  backdrop-filter: blur(30px);
+  padding-left: 4em;
+}
+
+.nav-close {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5em 5em 0 25em;
+}
+
+.nav-close img {
+  margin: 3px;
+}
+
+.nav-close-image {
+  position: absolute;
+  left: 81%;
+  top: 12%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  list-style: none;
+  margin-top: 5em;
+}
+
+nav li {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -1px;
+}
+
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -30,17 +77,14 @@ header {
   font-weight: 700;
   line-height: normal;
   position: relative;
+  width: 20em;
+  margin: 0 auto;
 }
 
 .caption img {
   position: absolute;
-  right: 10%;
+  right: 11%;
 }
-
-/* .play {
-  display: flex;
-  flex-direction: column;
-} */
 
 .heading h1 {
   color: #fff;
@@ -49,16 +93,33 @@ header {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  margin-top: 2em;
+  /* margin-top: 2em; */
+}
+
+.heading-stars {
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.heading-stars-image1 {
+  position: absolute;
+  top: 80%;
+  left: 34%;
+}
+
+.heading-stars-image2 {
+  margin-left: 7em;
 }
 
 .heading-title {
   position: relative;
+  width: 10em;
+  margin: 0 auto;
 }
 
 .heading-title > img {
   position: absolute;
-  right: 28%;
+  right: 23%;
   bottom: 70%;
 }
 
@@ -83,8 +144,8 @@ header {
 
 .star3 {
   position: absolute;
-  right: 20%;
-  bottom: 48%;
+  top: 46%;
+  right: 25%;
 }
 
 .count-down {
@@ -126,9 +187,47 @@ main {
   padding-bottom: 5em;
 }
 
+.introduction-image {
+  position: relative;
+}
+
+.introduction-image1 {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.introduction-heading {
+  position: relative;
+}
+
+.introduction-heading img {
+  position: absolute;
+  left: 80%;
+  bottom: 25%;
+}
+
+.text-overlay {
+  position: absolute;
+  left: 43%;
+  bottom: 40%;
+  width: 5em;
+}
+
+.text-overlay span {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 122.5%; /* 17.15px */
+}
+
 .introduction-arrow {
   width: 30px;
   margin: 0 auto;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 122.5%; /* 17.15px */
 }
 
 .main-content {
@@ -143,6 +242,10 @@ main {
   margin: 1em 0 0.5em;
 }
 
+.main-subheading div {
+  padding-top: 0.3em;
+}
+
 .main-text p {
   font-family: Montserrat;
   font-size: 17px;
@@ -154,7 +257,36 @@ main {
 }
 
 .rules {
-  padding-bottom: 3em;
+  padding-bottom: 4em;
+}
+
+.rules-image {
+  position: relative;
+}
+
+.rules-image1 {
+  position: absolute;
+  top: 48%;
+  left: 10%;
+}
+
+.rules-heading {
+  position: relative;
+}
+
+.rules-image2 {
+  position: absolute;
+  right: 10%;
+}
+
+.rules-text {
+  position: relative;
+}
+
+.rules-image3 {
+  position: absolute;
+  left: 28%;
+  bottom: -10%;
 }
 
 .Jugding {
@@ -183,6 +315,32 @@ main {
   margin: 0 5em;
 }
 
+.Jugding-image {
+  position: relative;
+}
+
+.Jugding-image1 {
+  position: absolute;
+  left: 40%;
+  top: -15%;
+}
+
+.Jugding-image2 {
+  position: relative;
+  right: 90%;
+  top: 50%;
+}
+
+.btn-block {
+  position: relative;
+}
+
+.Jugding-image3 {
+  position: absolute;
+  right: 13%;
+  top: 20%;
+}
+
 .btn2 {
   margin: 1em auto;
   padding: 8px 14px 10px;
@@ -202,6 +360,11 @@ main {
 
 .FAQS {
   padding-bottom: 5em;
+}
+
+.FAQS-text > img {
+  position: absolute;
+  left: 20%;
 }
 
 .FAQS-paragraph {
@@ -236,10 +399,49 @@ main {
   color: #d434fe;
 }
 
+.FAQS-image {
+  position: relative;
+  margin-top: 3em;
+}
+
+.FAQS-image1,
+.FAQS-image2,
+.FAQS-image3,
+.FAQS-image4 {
+  position: absolute;
+}
+
+.FAQS-image1 {
+  left: 47%;
+  top: -5%;
+}
+
+.FAQS-image2 {
+  top: 50%;
+  left: 15%;
+}
+
+.FAQS-image3 {
+  top: 30%;
+  left: 25%;
+}
+
+.FAQS-image4 {
+  bottom: 0%;
+  right: 20%;
+}
+
 .timeline {
-  margin: 0 5em 3em;
+  margin: 0 5em 5em;
   background: #150e28;
   border-bottom: none;
+  position: relative;
+}
+
+.timeline-image1 {
+  position: absolute;
+  top: 17%;
+  left: 15%;
 }
 
 .timeline-text > p {
@@ -248,6 +450,7 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 172.4%; /* 24.136px */
+  margin-bottom: 3em;
 }
 
 .timeline-text-block {
@@ -292,6 +495,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  position: relative;
 }
 
 .timeline-left span {
@@ -307,13 +511,61 @@ main {
   line-height: 170.9%; /* 20.508px */
 }
 
+.timeline-left-image2 {
+  position: absolute;
+  left: 80%;
+  bottom: 0;
+}
+
+.timeline-left-image3 {
+  position: absolute;
+  left: -20%;
+  bottom: -30%;
+}
+
 .prizes {
   padding-bottom: 8em;
   border-bottom: none;
+  margin-top: 10em;
+}
+
+.prizes-text {
+  position: relative;
+}
+
+.prizes-text-image1 {
+  position: absolute;
+  top: -30%;
+  left: 20%;
+}
+
+.prizes-text-image2 {
+  position: absolute;
+  top: 25%;
+  left: 65%;
 }
 
 .prizes-image {
   margin: 5em 0 4em;
+  position: relative;
+}
+
+.prizes-image1 {
+  position: absolute;
+  bottom: 0%;
+  left: 15%;
+}
+
+.prizes-image2 {
+  position: absolute;
+  bottom: -20%;
+  right: 15%;
+}
+
+.prizes-image3 {
+  position: absolute;
+  bottom: -110%;
+  right: 35%;
 }
 
 .prizes-lineup {
@@ -368,25 +620,40 @@ main {
   font-size: 14px;
 }
 
-/* WORK IN PROGRESS*/
-/* .partners-image {
+.partners {
+  padding-bottom: 10em;
+}
+
+.partners-image {
   border-radius: 5px;
   border: 1px solid #d434fe;
   background: rgba(255, 255, 255, 0.01);
+  padding: 4em;
+  margin: 5em 3em 0;
+  position: relative;
 }
 
 .partners-image-item {
-  display: flex;
-  flex-direction: column;
-  width: 100px;
+  position: absolute;
 }
 
-.partners-image-item img {
-  width: 100%;
-} */
+.partners-image1 {
+  top: 0;
+  left: 7%;
+}
+
+.partners-image2 {
+  top: 37%;
+  left: 55%;
+}
+
+.partners-image3 {
+  bottom: 2%;
+  right: 13%;
+}
 
 .privacy {
-  margin: 0 5em;
+  margin: 2em 5em;
   padding-bottom: 10em;
   border-bottom: none;
 }
@@ -396,10 +663,17 @@ main {
   font-style: normal;
   font-weight: 400;
   line-height: 216.4%; /* 25.968px */
+  position: relative;
+}
+
+.privacy-paragraph-image1 {
+  position: absolute;
+  right: 18%;
+  top: -1%;
 }
 
 .privacy-text p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .privacy-summary {
@@ -414,22 +688,39 @@ main {
   margin: 0 15px;
 }
 
+.privacy-paragraph-image2 {
+  position: absolute;
+  top: 19%;
+  right: 10%;
+}
+
 .license-block {
   text-align: left;
-  margin-left: 1.5em;
   margin-top: 2em;
+  padding: 0 1em;
 }
 .license {
   display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  position: relative;
 }
 
 .license img {
-  display: flex;
-  align-items: flex-start;
+  margin-top: 0.5em;
+}
+
+.license-image {
+  position: absolute;
+  left: -15%;
+  bottom: 80%;
 }
 
 .privacy-image {
   margin-top: 5em;
+  position: relative;
 }
 
 .privacy-image1 {
@@ -438,6 +729,30 @@ main {
 
 .privacy-image2 {
   margin-top: 10em;
+  margin-left: -2em;
+}
+
+.privacy-image3 {
+  position: absolute;
+  top: 15%;
+  left: -5%;
+}
+
+.privacy-image4 {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+}
+
+.privacy-image5 {
+  position: absolute;
+  top: 85%;
+}
+
+.privacy-image6 {
+  position: absolute;
+  bottom: 15%;
+  left: 13%;
 }
 
 /* Footer */
@@ -453,7 +768,17 @@ footer {
   line-height: 172.4%; /* 20.688px */
 }
 .footer-block {
-  padding-left: 6em;
+  padding-left: 5em;
+}
+
+.footer-header {
+  position: relative;
+}
+
+.footer-image {
+  position: absolute;
+  left: -10%;
+  bottom: 50%;
 }
 
 .footer-paragraph {
@@ -468,6 +793,13 @@ footer {
 
 .links {
   margin-bottom: 3em;
+  position: relative;
+}
+
+.links-image {
+  position: absolute;
+  left: 45%;
+  bottom: 45%;
 }
 
 .footer-cta {
@@ -496,6 +828,10 @@ footer {
   gap: 20px;
 }
 
+.contact {
+  position: relative;
+}
+
 .contact-item {
   margin-bottom: 2em;
   display: flex;
@@ -503,14 +839,27 @@ footer {
   gap: 20px;
 }
 
+.contact-star-image {
+  position: absolute;
+  left: 80%;
+  bottom: 60%;
+}
+
 .contact-item2 {
   display: flex;
   gap: 20px;
   align-items: flex-start;
+  position: relative;
 }
 
-.contact-item3 {
+.contact-paragraph {
   width: 7em;
+}
+
+.contact-item2-image {
+  position: absolute;
+  left: 20%;
+  bottom: -30%;
 }
 
 .copyright {

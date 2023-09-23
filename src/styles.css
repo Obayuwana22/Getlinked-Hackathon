@@ -2,6 +2,38 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
+@font-face {
+  font-family: "Clash Display";
+  src: local("Clash Display"), local("Clash Display"),
+    url("./assets/font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf")
+      format("otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: local("Clash Display Medium"), local("Clash Display"),
+    url("./assets/font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf")
+      format("otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: local("Clash Display Bold"), local("Clash Display Bold"),
+    url("./assets/font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Semibold.woff")
+      format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: local("Clash Display Bold"), local("Clash Display Bold"),
+    url("./assets/font/ClashDisplay_Complete/Fonts/WEB/fonts/ClashDisplay-Bold.woff")
+      format("woff");
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +42,8 @@
 
 html {
   font-size: 65.5%;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
