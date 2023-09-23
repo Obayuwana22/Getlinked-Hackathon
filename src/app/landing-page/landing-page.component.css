@@ -36,6 +36,10 @@ nav {
   top: 20%;
 }
 
+.register-btn {
+  margin-top: 24px;
+}
+
 nav ul {
   display: flex;
   flex-direction: column;

@@ -10,6 +10,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { RegisterComponent } from './register/register.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
+import { MobileNavComponent } from './mobile-nav/mobile-nav.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule } from "@angular/common/http";
     LogoComponent,
     ButtonComponent,
     ContactPageComponent,
-    RegisterComponent
+    RegisterComponent,
+    MobileNavComponent
   ],
   imports: [
     BrowserModule,

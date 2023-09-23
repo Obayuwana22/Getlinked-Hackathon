@@ -1,0 +1,65 @@
+.container {
+  padding: 4em 8.5%;
+}
+
+header {
+  display: flex;
+  background-color: #150e28;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+}
+
+ul {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+}
+
+header span,
+article h2 {
+  color: #d434fe;
+  font-family: "Clash Display";
+  font-style: normal;
+  line-height: normal;
+}
+
+header span {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+header h1 {
+  color: #fff;
+  font-family: "Clash Display";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+li {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+ul .contact {
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
