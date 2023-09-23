@@ -1,5 +1,5 @@
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 header {
@@ -25,19 +25,15 @@ nav {
 }
 
 .nav-close {
-  display: flex;
-  justify-content: flex-end;
-  margin: 5em 5em 0 25em;
-}
-
-.nav-close img {
-  margin: 3px;
+  position: absolute;
+  right: 10%;
+  top: 10%;
 }
 
 .nav-close-image {
   position: absolute;
-  left: 81%;
-  top: 12%;
+  left: 25%;
+  top: 20%;
 }
 
 nav ul {
@@ -45,7 +41,7 @@ nav ul {
   flex-direction: column;
   gap: 2em;
   list-style: none;
-  margin-top: 5em;
+  margin-top: 10em;
 }
 
 nav li {
@@ -54,6 +50,11 @@ nav li {
   font-weight: 500;
   line-height: normal;
   letter-spacing: -1px;
+  transition: color 0.3s;
+}
+
+nav li:hover {
+  color: #d434fe;
 }
 
 .nav-bar {
@@ -79,6 +80,10 @@ nav li {
   position: relative;
   width: 20em;
   margin: 0 auto;
+}
+
+.caption div {
+  font-size: 1.5rem;
 }
 
 .caption img {
@@ -189,6 +194,7 @@ main {
 
 .introduction-image {
   position: relative;
+  width: 100%;
 }
 
 .introduction-image1 {
@@ -196,6 +202,10 @@ main {
   top: 30%;
   left: 15%;
 }
+
+/* .introduction-image img + img {
+  min-width: 50%;
+} */
 
 .introduction-heading {
   position: relative;
@@ -550,6 +560,10 @@ main {
   position: relative;
 }
 
+.prizes-image img {
+  max-width: 100%;
+}
+
 .prizes-image1 {
   position: absolute;
   bottom: 0%;
@@ -586,7 +600,8 @@ main {
 
 .prizes-winners .winner {
   position: absolute;
-  top: -45%;
+  top: -60%;
+  right: -22%;
 }
 
 .runner-ups {
@@ -624,6 +639,13 @@ main {
   padding-bottom: 10em;
 }
 
+.partners-heading {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27.5px; /* 85.938% */
+}
+
 .partners-image {
   border-radius: 5px;
   border: 1px solid #d434fe;
@@ -631,6 +653,10 @@ main {
   padding: 4em;
   margin: 5em 3em 0;
   position: relative;
+}
+
+.partners-image-block img {
+  min-width: 100%;
 }
 
 .partners-image-item {
@@ -653,9 +679,13 @@ main {
 }
 
 .privacy {
-  margin: 2em 5em;
+  margin: 2em 5em 0;
   padding-bottom: 10em;
   border-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .privacy-text {
@@ -664,6 +694,7 @@ main {
   font-weight: 400;
   line-height: 216.4%; /* 25.968px */
   position: relative;
+  text-align: center;
 }
 
 .privacy-paragraph-image1 {
@@ -809,6 +840,7 @@ footer {
   font-style: normal;
   font-weight: 600;
   line-height: 172.4%; /* 24.136px */
+  margin-bottom: 1em;
 }
 
 .footer-links {
@@ -853,7 +885,7 @@ footer {
 }
 
 .contact-paragraph {
-  width: 7em;
+  width: 8em;
 }
 
 .contact-item2-image {
@@ -865,4 +897,94 @@ footer {
 .copyright {
   text-align: center;
   margin-top: 3em;
+}
+
+@media screen and (min-width: 880px) {
+  header {
+    width: 1512px;
+  }
+  main {
+    width: 1512px;
+  }
+  .caption {
+    text-align: right;
+  }
+  .hero-block {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-left {
+    text-align: left;
+  }
+
+  .partners-image {
+    padding: 10em;
+    margin: 10em auto 0;
+    width: 80%;
+  }
+
+  .prizes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .prizes-image {
+    position: absolute;
+    left: 0;
+    /* margin-left: 10em; */
+  }
+
+  .privacy {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10em 0 0;
+    /* align-items: center; */
+  }
+
+  .privacy-text-header {
+    text-align: left;
+  }
+
+  .privacy-text-header > p {
+    margin-top: 2em;
+    width: 60%;
+  }
+  .privacy-summary {
+    width: 500px;
+  }
+
+  /* .privacy-image1 {
+    width: 200%;
+  }
+
+  .privacy-image2 {
+    width: 200%;
+  } */
+
+  footer {
+    padding: 5em 20em 3em;
+    width: 1512px;
+  }
+  .footer-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 5em;
+    padding-left: 0;
+  }
+  .footer-paragraph {
+    width: 30em;
+  }
+  .terms {
+    margin-top: 6em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .footer-image {
+    top: 10%;
+    left: -20%;
+  }
 }
