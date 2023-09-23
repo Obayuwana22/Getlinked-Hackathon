@@ -13,11 +13,12 @@ header {
 
 .nav-bar ul {
   display: none;
+  cursor: pointer;
 }
 
 nav {
   display: none;
-  font-family: Inter;
+  font-family: "Montserrat";
   position: absolute;
   top: 0;
   z-index: 1;
@@ -64,14 +65,25 @@ nav li {
 }
 
 nav li:hover {
-  color: #d434fe;
+  background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-bar {
   display: flex;
+  position: fixed;
+  background: #150e28;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 0 3em 20px;
+  padding: 2em 3em 20px;
   border-bottom: 1px solid grey;
 }
 
@@ -200,6 +212,7 @@ nav li:hover {
     flex-direction: row;
     justify-content: space-between;
     position: relative;
+    margin-top: 90px;
   }
   .caption {
     position: absolute;
@@ -994,7 +1007,7 @@ footer {
 
 @media screen and (min-width: 880px) {
   header {
-    width: 1512px;
+    width: 100%;
     overflow: hidden;
   }
   .nav-bar-logo {
@@ -1026,7 +1039,7 @@ footer {
   }
 
   main {
-    width: 1512px;
+    width: 100%;
   }
 
   .main-content {
@@ -1158,8 +1171,8 @@ footer {
   } */
 
   footer {
-    padding: 5em 20em 3em;
-    width: 1512px;
+    padding: 5em 10em 3em;
+    width: 100%;
   }
   .footer-block {
     display: flex;
