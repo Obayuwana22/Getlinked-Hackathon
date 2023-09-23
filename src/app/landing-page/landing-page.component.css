@@ -1,14 +1,10 @@
-img {
-  /* max-width: 100%; */
-}
-
 header {
   background: #150e28;
   color: #fff;
   padding: 30px 0;
   min-width: 396px;
   height: 100vh;
-  margin-bottom: 10em;
+  /* margin-bottom: 10em; */
 }
 
 .nav-bar ul {
@@ -996,6 +992,7 @@ footer {
   header {
     width: 1512px;
     overflow: hidden;
+    margin-bottom: 0;
   }
   .nav-bar-logo {
     margin-left: 7em;
@@ -1054,6 +1051,8 @@ footer {
 
   .introduction {
     border-top: 1px solid rgba(255, 255, 255, 0.18);
+    margin: 0;
+    padding: 0;
   }
 
   .introduction-image img + img {
