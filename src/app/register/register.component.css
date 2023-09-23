@@ -4,6 +4,11 @@
   position: relative;
 }
 
+.unscrollable {
+  overflow: hidden;
+  position: fixed;
+}
+
 .register-img {
   width: 42.45%;
   margin-left: -8.5%;
