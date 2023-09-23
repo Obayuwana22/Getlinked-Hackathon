@@ -1,6 +1,8 @@
 <app-mobile-nav></app-mobile-nav>
+
 <section>
   <!--mobile-nav section-->
+  <div class="bg-img"></div>
 
   <!--Call to action-->
   <main>
@@ -39,9 +41,18 @@
       </div>
     </article>
     <div class="question-form">
+      <img
+        src="./../../assets/svg/back icon.svg"
+        alt=""
+        class="back-icon"
+        routerLink=""
+      />
       <div class="question-form_assist">
         <h3>Questions or need assistance?</h3>
         <h3>Let us know about it!</h3>
+      </div>
+      <div class="email-us">
+        Email us below to any question related to our event
       </div>
       <form [formGroup]="contactForm" (submit)="onSubmit()">
         <div class="response-input">
@@ -81,6 +92,22 @@
           </div>
         </div>
       </form>
+
+      <div class="contact-cta_media mobile-cta-media">
+        <p>Share on</p>
+        <figure>
+          <img
+            src="./../../assets/svg/mdi_instagram.svg"
+            alt="instagram-logo"
+          />
+          <img src="./../../assets/svg/Vector (1).svg" alt="twitter-logo" />
+          <img src="./../../assets/svg/Vector (2).svg" alt="facebook-logo" />
+          <img
+            src="./../../assets/svg/ri_linkedin-fill.svg"
+            alt="instagram-logo"
+          />
+        </figure>
+      </div>
     </div>
   </main>
 </section>

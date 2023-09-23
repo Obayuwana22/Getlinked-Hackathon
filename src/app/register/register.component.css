@@ -37,6 +37,7 @@
 .form-title h4 {
   color: #fff;
   font-family: "Montserrat";
+  text-transform: uppercase;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -80,7 +81,6 @@
 .form-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
   margin-bottom: 29px;
 }
@@ -154,11 +154,17 @@ select option {
 
 .select-option {
   padding: 20px;
+  background-color: #903aff;
   display: inline-block;
 }
 
 .response-input select::-ms-expand {
   display: none;
+}
+
+.spinner-btn {
+  width: 24px;
+  height: 24px;
 }
 
 .review-details {
@@ -271,4 +277,128 @@ select option {
   width: 100%;
   color: #fff;
   border-radius: 4px;
+}
+
+.mobile-img {
+  display: none;
+}
+
+.error-msg {
+  color: #d434fe;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .register-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register-img {
+    margin-left: 0;
+    margin-bottom: 2em;
+  }
+
+  .register-form {
+    width: 57%;
+    padding: 4em 3em;
+    height: auto;
+  }
+}
+
+/* Media query for screens with a max-width of 768px (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+  .register-img {
+    display: none;
+  }
+
+  .movement-cta p {
+    font-size: 12px;
+  }
+
+  .mobile-img {
+    display: block;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-img .mobile-img-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .humans {
+    display: flex;
+  }
+
+  .register-form {
+    width: 100%;
+    padding: 0 5em;
+    background: none;
+    box-shadow: none;
+  }
+
+  .form-title h3 {
+    font-size: 24px;
+  }
+
+  .form-title h4 {
+    font-size: 16px;
+  }
+
+  .movement-cta {
+    gap: 32px;
+  }
+
+  .response-input {
+    margin-bottom: 18px;
+  }
+
+  .line {
+    width: 50px;
+  }
+
+  .response-input {
+    width: 100%;
+  }
+
+  .response-input input {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .last-child {
+    margin-bottom: 0;
+  }
+
+  select {
+    height: 42px;
+  }
+
+  .review-details {
+    margin-bottom: 12px;
+  }
+
+  .check-terms label {
+    gap: 8px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .cta-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cta-button button {
+    width: 50%;
+  }
 }
