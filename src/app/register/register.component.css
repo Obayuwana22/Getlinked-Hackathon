@@ -1,0 +1,86 @@
+.container {
+    padding: 4em 5em;
+}
+
+/* header {
+    background: url(/src/assets/png/Purple-Lens-Flare-PNG.png), lightgray -204.25px 7px / 119.817% 104.852% no-repeat;
+    background-blend-mode: hard-light;
+} */
+
+section {
+    background-color: #150e28;
+    /* padding-bottom: 4em; */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: sticky;
+    top: 0;
+    bottom: 0; */
+}
+
+ul {
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+}
+
+header span, article h2 {
+    color: #D434FE;
+    font-family: Clash Displ;
+    font-style: normal;
+    line-height: normal;
+}
+
+header span {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+header h1 {
+    color: #FFF;
+    font-family: Clash Display;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+li {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+ul .contact {
+    background: linear-gradient(90deg, #903AFF 3.08%, #FF26B9 93.85%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+.button-register button {
+    width: 172px;
+    height: 53px;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #FFF;
+    background: #150E28;
+    border: 2px solid;
+    cursor: pointer;
+    border-image: linear-gradient(#903AFF, #FF26B9) 22;
+}
+
+
+/* linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%) */

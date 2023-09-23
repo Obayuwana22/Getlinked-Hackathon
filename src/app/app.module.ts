@@ -7,6 +7,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LogoComponent } from './logo/logo.component';
 import { ButtonComponent } from './button/button.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     LandingPageComponent,
     LogoComponent,
     ButtonComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
